@@ -158,3 +158,9 @@ end)
 Section2:NewButton("doors hub 2","hub",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
 end)
+
+Section2:NewButton("Simple Spy","hub",function()
+loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+
+Section2:NewButton("Arsenal","Script",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Storm99999/whitelistkeys/main/SCRIPT_VIP.lua"))()
