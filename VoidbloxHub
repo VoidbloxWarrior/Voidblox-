@@ -10,7 +10,6 @@ local Section2 = Tab2:NewSection("Scripts & hubs")
 local Tab3 = Window:NewTab("Credits")
 local Section = Tab3:NewSection("made by Voidblox Warrior")
 local Section = Tab3:NewSection(" Subscribe to Voidblox Warrior")
-local Section = Tab3:NewSection(" Subscribe to Jn hh gaming")
 
 -- Buttons/Windows/Idk
 
