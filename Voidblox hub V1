@@ -1,0 +1,115 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local window = kavoUi.CreateLib("Voidblox hub V1","DarkTheme")
+
+---Tabs
+
+local Tab1 = window:NewTab("Main")
+
+local Tab1Section = Tab1:NewSection("Main")
+
+local Tab2 = window:NewTab("scripts")
+
+local Tab2Section = Tab2:NewSection("scripts")
+
+local Tab3 = window:NewTab("Read")
+
+local Tab3Section = Tab3:NewSection("Enjoy my friend you deserve that")
+
+local Tab3Section = Tab3:NewSection("made by Voidblox")
+
+---Buttons
+
+Tab1Section:NewButton("Fly script","makes you fly",function()
+
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+
+end)
+
+Tab1Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+
+    local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+end)
+
+Tab1Section:NewToggle("Fov", "Changes Fov", function(state)
+
+    if state then
+
+        game.Workspace.CurrentCamera.FieldOfView = 120
+
+    else
+
+        game.Workspace.CurrentCamera.FieldOfView = 80
+
+    end
+
+end)
+
+Tab1Section:NewSlider("Walkspeed", "Speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+end)
+
+Tab1Section:NewButton("infinite yield","script",function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+Tab2Section:NewButton("Brookhaven ice hub","script",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+
+end)
+
+Tab2Section:NewButton("Brookhaven fe gamepass","script",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/AvatarUnlocker/main/IceHub"))() 
+
+end)
+
+Tab2Section:NewButton("animation bypass hub","hub",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+
+end)
+
+Tab2Section:NewButton("Vhub fixed","hub",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/2642/Created/VHub"))()
+
+end)
+
+Tab2Section:NewButton("keyboard","hub",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+
+end)
+
+Tab2Section:NewButton("RTX","hub",function()
+
+loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+
+end)
+
+Tab2Section:NewButton("Pendulum hub","hub",function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+
+end)
+
+Tab2Section:NewButton("mini hub", "hubs", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniNoobie/MINI-HUB-V2/main/FINALLY%20UPDATED%20MINI%20HUB",true))()
+
+end)
